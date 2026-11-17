@@ -1,0 +1,17 @@
+{
+  "student.decoder.film_mlp": true,
+  "student.norm": "ln",
+  "student.estimate_level": "action",
+  "student.loss_type": "KLDiv",
+  "student.use_history": true,
+  "student.horizon": 1,
+  "student.use_amp": false,
+  "student.history_tokenizer.persistent": true,
+  "student.history_safe_copy": true,
+  "dagger": true,
+  "add_teacher_state": true,
+  "dagger_train_env.agent_type": "anneal_linear",
+  "dagger_train_env.alpha0": 0.0,
+  "dagger_train_env.alpha1": 1.0,
+  "dagger_train_env.anneal_step": 32768
+}

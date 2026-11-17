@@ -1,0 +1,43 @@
+# @package _global_
+defaults:
+  - abs_goal_3view
+
+# RAL-v2 confirmatory sensor regime. Camera order is part of the protocol:
+# primary camera, positive-y auxiliary, negative-y auxiliary.
+multiple_cameras: true
+camera_eyes:
+  - [-0.238, 0.388, 0.694]
+  - [-0.408, -0.328, 0.706]
+
+camera:
+  eye: [0.458, -0.400, 0.740]
+  at: [0.0, 0.0, 0.55]
+  up: [0.0, 0.0, 1.0]
+  # Fixed extrinsics/FOV: do not consume privileged object pose or radius.
+  track_object: false
+  use_cloud: true
+  cloud_type: object
+  object_id: 2
+  img_size: [32, 32]
+  fov: 0.6
+  z_near: 0.01
+  aspect: 1.0
+  resample_cloud: true
+  cloud_size: 512
+  cloud_sample_method: deterministic
+  hide_arm: true
+  use_robot: false
+  use_ground: false
+  use_table: false
+  mimic_table_removal: false
+
+# Concatenate the three world-frame 512-point clouds in the camera order above,
+# then use deterministic-start FPS to return exactly 512 fused points.
+use_partial_cloud: false
+combine_cloud:
+  src_keys: [partial_cloud, partial_cloud_1, partial_cloud_2]
+  dst_key: partial_cloud
+  cloud_size: 512
+  combine_method: deterministic_fps
+
+env_name: abs_goal_3view_ral_v2

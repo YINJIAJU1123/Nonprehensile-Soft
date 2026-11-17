@@ -1,0 +1,2311 @@
+{
+  "migration_date": "2026-11-17",
+  "base_commit": "dbc3aa85339b8b151835066c5ac18d0c4c5c632f",
+  "note": "Static initial migration provenance; locally generated files are tracked by Git. Source files may include uncommitted changes relative to base_commit.",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "source": "LICENSE",
+      "source_set": "contact_future_20260809",
+      "reason": "runtime packaging/license",
+      "source_sha256": "6f79f90412086c4bef35afa6257d5c85c5e16fb43e71be068deec028869feaf6",
+      "migrated_sha256": "755b240e8cf3c97e3859abf7b47804ef0aee018ec3ffe40f3eb618b29f247cc9",
+      "modified_during_migration": true
+    },
+    {
+      "path": "data/splits/ral_v2/teacher80_train_v2.json",
+      "source": "data/splits/ral_v2/teacher80_train_v2.json",
+      "source_set": "contact_future_20260809",
+      "reason": "rigid reference split",
+      "source_sha256": "4e6749bd79a026293c58a3e816605352ac4037c1675c6608fa9842494f65a30c",
+      "migrated_sha256": "4e6749bd79a026293c58a3e816605352ac4037c1675c6608fa9842494f65a30c",
+      "modified_during_migration": false
+    },
+    {
+      "path": "data/splits/ral_v2/unseen20_test_v2.json",
+      "source": "data/splits/ral_v2/unseen20_test_v2.json",
+      "source_set": "contact_future_20260809",
+      "reason": "rigid reference split",
+      "source_sha256": "485c8ce59367b9c93e534438cb3deef02ffeb566a00c0f2667c500018efaec57",
+      "migrated_sha256": "485c8ce59367b9c93e534438cb3deef02ffeb566a00c0f2667c500018efaec57",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/MANIFEST.in",
+      "source": "dywa/MANIFEST.in",
+      "source_set": "contact_future_20260809",
+      "reason": "runtime packaging/license",
+      "source_sha256": "db1ba7e2110378daca556cb750db1270a9c72bf577e17dea5e1301df010f8607",
+      "migrated_sha256": "11640d19dbb72a675f2314585a95841dd0563feb879d9956873b6968983129b0",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/c_src/franka_kin_cuda.cpp",
+      "source": "dywa/c_src/franka_kin_cuda.cpp",
+      "source_set": "contact_future_20260809",
+      "reason": "CUDA extension",
+      "source_sha256": "f5566bc37b7f2bee5700c1f2a53a881ecc8382ae741f8ecce0c7d0a47071a4db",
+      "migrated_sha256": "f5566bc37b7f2bee5700c1f2a53a881ecc8382ae741f8ecce0c7d0a47071a4db",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/c_src/franka_kin_cuda_kernel.cu",
+      "source": "dywa/c_src/franka_kin_cuda_kernel.cu",
+      "source_set": "contact_future_20260809",
+      "reason": "CUDA extension",
+      "source_sha256": "6381d67e21b49530bc75f95bf1e75244d8fdca0147aa3f2d9cd090d4ed490ef7",
+      "migrated_sha256": "6381d67e21b49530bc75f95bf1e75244d8fdca0147aa3f2d9cd090d4ed490ef7",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/c_src/ur5_kin_cuda.cpp",
+      "source": "dywa/c_src/ur5_kin_cuda.cpp",
+      "source_set": "contact_future_20260809",
+      "reason": "CUDA extension",
+      "source_sha256": "36d0ce7af1568892ca212db8caa05cb105873aba0c21e20e79fe0fce0970e63c",
+      "migrated_sha256": "36d0ce7af1568892ca212db8caa05cb105873aba0c21e20e79fe0fce0970e63c",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/c_src/ur5_kin_cuda_kernel.cu",
+      "source": "dywa/c_src/ur5_kin_cuda_kernel.cu",
+      "source_set": "contact_future_20260809",
+      "reason": "CUDA extension",
+      "source_sha256": "fbf267ace1faeb946bc0a820ead21496fbf343ae1f95b008f871014f0383c27e",
+      "migrated_sha256": "fbf267ace1faeb946bc0a820ead21496fbf343ae1f95b008f871014f0383c27e",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/exp/train/collect_teacher_buffer.py",
+      "source": "dywa/exp/train/collect_teacher_buffer.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "a9d23f42f0010f78f156da8c98f5de7b0b550b2a06914f1e51db8e822b37c2cf",
+      "migrated_sha256": "073f10a4b110a12293d4f6316316479c2525c62ed7959b8be825c8d0d087e41e",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/exp/train/contact_state_query.py",
+      "source": "dywa/exp/train/contact_state_query.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "7f557a446576597e253e10ebd2d6791d11a8303cd28a16bc4db0d7bf81289444",
+      "migrated_sha256": "7f557a446576597e253e10ebd2d6791d11a8303cd28a16bc4db0d7bf81289444",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/exp/train/distill.py",
+      "source": "seer_history/distill.py",
+      "source_set": "history_repairs_20261021",
+      "reason": "SEER history repair",
+      "source_sha256": "bc0f15175e54f771ccbde1b8091ed4ebad474e1bc75525d9571ef0cf642cfd5b",
+      "migrated_sha256": "1269619526df01fd88c6dc21adf2e79ead6db22eda07bb079e26d2d4cd8da619",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/exp/train/distill_FT_distill.py",
+      "source": "seer_history/distill_FT_distill.py",
+      "source_set": "history_repairs_20261021",
+      "reason": "SEER history repair",
+      "source_sha256": "2f961a642e5bfcb8e51c5ab6a0e7ef3ae8f2bff35270356494838bec3cb4aeb3",
+      "migrated_sha256": "2f961a642e5bfcb8e51c5ab6a0e7ef3ae8f2bff35270356494838bec3cb4aeb3",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/exp/train/distill_FT_distill_kN.py",
+      "source": "dywa/exp/train/distill_FT_distill_kN.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "4a941bc40b2d01c08c771b4c6011d5ecb0a29cd5ff89487cbe481f2de4294b34",
+      "migrated_sha256": "4a941bc40b2d01c08c771b4c6011d5ecb0a29cd5ff89487cbe481f2de4294b34",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/exp/train/envs/cube_env_wrappers.py",
+      "source": "dywa/exp/train/envs/cube_env_wrappers.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "ddfb814d0ec5fa5c6aa12a4b3513836c2d2fd20ed1d8e9d71e99aa163cd9b646",
+      "migrated_sha256": "9c2070dee014eca14aaaaf4ac83c1ab5547c9580b75e153983a6c3a8ef41ac50",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/exp/train/envs/push_env_wrappers.py",
+      "source": "dywa/exp/train/envs/push_env_wrappers.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "57776c750e497b27e6733b2d7891dfa3331e7d15f29fb8739d8fb634437449e2",
+      "migrated_sha256": "57776c750e497b27e6733b2d7891dfa3331e7d15f29fb8739d8fb634437449e2",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/exp/train/modules_teacher_FT.py",
+      "source": "dywa/exp/train/modules_teacher_FT.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e9ee0df430c55612a97db8940069ab263f1e959eb6885129285fc16b09e7bb63",
+      "migrated_sha256": "e9ee0df430c55612a97db8940069ab263f1e959eb6885129285fc16b09e7bb63",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/exp/train/rma_env.py",
+      "source": "dywa/exp/train/rma_env.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "2edd7ae4e856562e783c719670695389da81bf55eabf163536a990b99687dcfa",
+      "migrated_sha256": "e8ca0355a18a7b9deb427c15fd54c3e5fdd1c2e5f7f2181a33a3907875dc6123",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/exp/train/seer_future_advantage.py",
+      "source": "dywa/exp/train/seer_future_advantage.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "85e8b9ab0f1b35dc0a89d0a6b2b7877f41dee5484967ea1554e11acea561bdc8",
+      "migrated_sha256": "85e8b9ab0f1b35dc0a89d0a6b2b7877f41dee5484967ea1554e11acea561bdc8",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/exp/train/seer_future_residual.py",
+      "source": "dywa/exp/train/seer_future_residual.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "129a2d50ba253b935e31ef30782d3a5e5e27c979ae6455624f02872915b0a9ff",
+      "migrated_sha256": "129a2d50ba253b935e31ef30782d3a5e5e27c979ae6455624f02872915b0a9ff",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/exp/train/seer_history.py",
+      "source": "seer_history/seer_history.py",
+      "source_set": "history_repairs_20261021",
+      "reason": "SEER history repair",
+      "source_sha256": "65ce95568f5a4726c141a215947627ffad6c318be8edcf6d135f2cde61451e51",
+      "migrated_sha256": "03345851dad7eae30e79d7a770717c0b079bafed273ff21ae1aa9cdb48f75125",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/exp/train/seer_plan.py",
+      "source": "dywa/exp/train/seer_plan.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "c042fdce3d953729599bbf92bcc0742de77125e74c3c2ba41bb9b601ee2bf0e6",
+      "migrated_sha256": "c042fdce3d953729599bbf92bcc0742de77125e74c3c2ba41bb9b601ee2bf0e6",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/exp/train/student_FT_distill.py",
+      "source": "dywa/exp/train/student_FT_distill.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "26d38e70d1f91b74a8271548b10d910bf5d13cd4fcae3e70b5ea514892c7442a",
+      "migrated_sha256": "26d38e70d1f91b74a8271548b10d910bf5d13cd4fcae3e70b5ea514892c7442a",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/exp/train/train_FT_offline.py",
+      "source": "dywa/exp/train/train_FT_offline.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "97280b08ba6d983eca24a329a3bfaa8a19a806eefab67696933ca786d9d60660",
+      "migrated_sha256": "9c436134e3f46fc2e0dcbc20734c45757533b62d54e78e07435cee4ff5e27f71",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/exp/train/train_ppo_arm.py",
+      "source": "dywa/exp/train/train_ppo_arm.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "a3b75f433236f6e10a8708a2c174b5ac3b5da043d56e686eab71b44063863d92",
+      "migrated_sha256": "a3b75f433236f6e10a8708a2c174b5ac3b5da043d56e686eab71b44063863d92",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/exp/train/train_rma.py",
+      "source": "dywa/exp/train/train_rma.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "42762fe9a8b8efd6913621e57dd48bb22dbaee1a7be74c537ac4d3321d77a7be",
+      "migrated_sha256": "a57b9a26c4ce7388b9215697d5614a850a0eaad6fd335232369a865bc13de7bb",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/exp/train/train_rma_FT_kN.py",
+      "source": "dywa/exp/train/train_rma_FT_kN.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "22844bfb15f5519bbae5e966f703b11f49320803465d12e4bddda6121feb1449",
+      "migrated_sha256": "22844bfb15f5519bbae5e966f703b11f49320803465d12e4bddda6121feb1449",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/exp/train/valid_ppo_arm.py",
+      "source": "dywa/exp/train/valid_ppo_arm.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "47586e64eb112d86e5e222300eb873942abdb1d330427b1f9d2729dec35f5a1c",
+      "migrated_sha256": "47586e64eb112d86e5e222300eb873942abdb1d330427b1f9d2729dec35f5a1c",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/pyproject.toml",
+      "source": "dywa/pyproject.toml",
+      "source_set": "contact_future_20260809",
+      "reason": "runtime packaging/license",
+      "source_sha256": "f6a3bdfccc2ea64bdbf20b9227e59f2c156b58fec35f9cc4ebe3be6de133ec74",
+      "migrated_sha256": "f6a3bdfccc2ea64bdbf20b9227e59f2c156b58fec35f9cc4ebe3be6de133ec74",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/setup.cfg",
+      "source": "dywa/setup.cfg",
+      "source_set": "contact_future_20260809",
+      "reason": "runtime packaging/license",
+      "source_sha256": "c491b9cb5f21f897e64e154e633f475472789ad379bd552c5904135634d8cd47",
+      "migrated_sha256": "4842efc23d6525201e909bf9bea870d8e55442037b3ddefb8de56624acd12200",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/setup.py",
+      "source": "dywa/setup.py",
+      "source_set": "contact_future_20260809",
+      "reason": "runtime packaging/license",
+      "source_sha256": "ade230e2d660fde20aaaef71cf3991fc9c0729c0d2fd8c4e918404565613a331",
+      "migrated_sha256": "ade230e2d660fde20aaaef71cf3991fc9c0729c0d2fd8c4e918404565613a331",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/__init__.py",
+      "source": "dywa/src/data/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/bump.mtl",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/bump.mtl",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "6bef05ffe22bf1918c479eecec9be20ed7f98455e6ebcebdcc14e5fc88ce8546",
+      "migrated_sha256": "6bef05ffe22bf1918c479eecec9be20ed7f98455e6ebcebdcc14e5fc88ce8546",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/coloredcard.mtl",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/coloredcard.mtl",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "a4e2a4e321fbec72385c37982f3c8a4c1dd9d72103a40f93e3b511066747b591",
+      "migrated_sha256": "a4e2a4e321fbec72385c37982f3c8a4c1dd9d72103a40f93e3b511066747b591",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/coloredcube.mtl",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/coloredcube.mtl",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "bb73c52cb245e8790430ba0d07ce5bd18b4d200ea6cd14792252fe2b8d85fd90",
+      "migrated_sha256": "bb73c52cb245e8790430ba0d07ce5bd18b4d200ea6cd14792252fe2b8d85fd90",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/finger.obj",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/finger.obj",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "66e0a3a626eaefb51d870eb4278c3a3f73f04b17b5ab30df311f22bdd7f74522",
+      "migrated_sha256": "e3e30cc215b556c65ee0d52a4ebb5f93979452e991bb9018be3b6f5a5c3f1235",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/finger.stl",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/finger.stl",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "2d07a740392f3b9b0816f65d64fff9927d3d57c897870fc4b6ff9c56fff3a0c8",
+      "migrated_sha256": "2d07a740392f3b9b0816f65d64fff9927d3d57c897870fc4b6ff9c56fff3a0c8",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/hand.obj",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/hand.obj",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "9f1f3398f710e252910b39af81e5ea879f253885e57cd040118abaab7de54885",
+      "migrated_sha256": "679e1520d65265df39b5d7f6260404f43fde447fc762c4c44f3873fe23a8b152",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/hand.stl",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/hand.stl",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "94493e94f30fe940f2c8ca2f155c3bbe67bbff406d3edf5e261670d2f0f6e2ed",
+      "migrated_sha256": "94493e94f30fe940f2c8ca2f155c3bbe67bbff406d3edf5e261670d2f0f6e2ed",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/holev2.mtl",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/holev2.mtl",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "b9b5fd2175d8678553dc15c7498a54a5e08c587f4445c35959e011081c37007d",
+      "migrated_sha256": "b9b5fd2175d8678553dc15c7498a54a5e08c587f4445c35959e011081c37007d",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/link0.obj",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/link0.obj",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "b55372e5bb72f07bd4a0b5b66cb27f2eb35016bf2322e3f23145336f282842f0",
+      "migrated_sha256": "154a174faded12c0dea6fb8f7a4a7d8f4bbb0a5d7fd4236118f4b63aba41ee45",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/link0.stl",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/link0.stl",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa",
+      "migrated_sha256": "dfc6d94330de8ddb005b311bfdba9f3b8e1aa7c256b71592ee7ff32cb9a9a5aa",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/link1.obj",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/link1.obj",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "c3440a8671b70343f13fbbf586251b297e952749f9850913be4629aed847c458",
+      "migrated_sha256": "395c002a096773e5e1bb1e77577e204195f85232895775e3d9b133b4e9548e79",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/link1.stl",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/link1.stl",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "e41a39a94108fcf56aacff603fc91ec80541f4c1af17b51a0de5617f5566e6d2",
+      "migrated_sha256": "e41a39a94108fcf56aacff603fc91ec80541f4c1af17b51a0de5617f5566e6d2",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/link2.obj",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/link2.obj",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "fc279633c0a14dcee8dd74e371274699e4786a135d460007cf5d0b34476ba9c5",
+      "migrated_sha256": "6c683998fb8a208567ea6d0f94cc10bb4dc2043ecb23b58eb98f5bfb565afe44",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/link2.stl",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/link2.stl",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039",
+      "migrated_sha256": "370f7605a0fae3529db169ded50f52f171024aa792d4d773bc84197301f6a039",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/link3.obj",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/link3.obj",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "64e5deb22ef80e594cbaaae5e97e6a788643a5089319b95c6c736d791ce3745a",
+      "migrated_sha256": "6977b39d4c888a2e294eb6b1f0374175b6f40907cd32120cc004ba8f53b68c38",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/link3.stl",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/link3.stl",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1",
+      "migrated_sha256": "0a8d638b9349c6c0eefc4e888636ac4838c4b27170f18a51699321118af709c1",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/link4.obj",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/link4.obj",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "64fbabb294012d86d3ba5d1feabb362f6c8a70ee5d45947073112eeff9e97ab2",
+      "migrated_sha256": "80b4295169ee160c1e97568f2aa7352712ffd1596fa9e619f962fbb25d563d22",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/link4.stl",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/link4.stl",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d",
+      "migrated_sha256": "0180ebb5772ec9840cb049750cffb29a9ddc90311752a16ea34757782ef9e48d",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/link5.obj",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/link5.obj",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "936f20861fe9ae5a2873e5a2536086629fab92ebdbd5e5217919d9d49a2b285c",
+      "migrated_sha256": "b8f00b2e3a64898f808d6054f2d4e634df38d0cfcf94369a852619ad34c5c2ae",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/link5.stl",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/link5.stl",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "dd17e688c7870e722283525879643d53a74c0024d328b0e14b034b54c8b6c31a",
+      "migrated_sha256": "dd17e688c7870e722283525879643d53a74c0024d328b0e14b034b54c8b6c31a",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/link6.obj",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/link6.obj",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "b950af03e0c8b06dae2c7f68af1e2c2f945b37174f60358d2c6b7e77a8cdb0ec",
+      "migrated_sha256": "3d6853267b41b34abe6676c1f58d7de1bf13e1fd99ab07ca099491df1ea09335",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/link6.stl",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/link6.stl",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77",
+      "migrated_sha256": "20b768e99a0e0440b5754dcca108016434e57937cc356acd9c352ccd3cb27f77",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/link7.obj",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/link7.obj",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "e96078e8551ea47b991fba278953233b56acc870b1db6c552eefd46cf31dda47",
+      "migrated_sha256": "56b479d4d93252f4617bba155ace78a4bbf1ca95e06954c7abfcbcd3b6fa7c46",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/link7.stl",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/link7.stl",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c",
+      "migrated_sha256": "92ac6afcf7574c034d3170d8a68e95ac9048ab9d0dd5bbd8311b86e551b9ab1c",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/simple_finger.obj",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/simple_finger.obj",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "9dc3a88bdbe057ea93e7f15da3c44436cae56814532260a2a818cff6c4f34e00",
+      "migrated_sha256": "9dc3a88bdbe057ea93e7f15da3c44436cae56814532260a2a818cff6c4f34e00",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/table.obj",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/table.obj",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "2ab0adc4ac2561bb49b00a01109e74ca8873353a8781edec82d905a0b702a49c",
+      "migrated_sha256": "5701523a49afa13b7a1de9f0be91abb7090e0825edcff49587981c1cd24e6e1f",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/collision/wall.obj",
+      "source": "dywa/src/data/assets/crm-panda/meshes/collision/wall.obj",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "b9b7d6a31f79c2fa875f8cba34434573fe8145403f5d37fe8b7d8027043eac98",
+      "migrated_sha256": "2701ed00c739c57030c7adbbb75e4eb4a871a78cf94619c871877d9407e6e9a6",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/visual/17b77403b80de623f1783a44a88d6274.mtl",
+      "source": "dywa/src/data/assets/crm-panda/meshes/visual/17b77403b80de623f1783a44a88d6274.mtl",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "3eb34ab18c5f4558a76dbb101c2dbc436f8aa0286d3d3e00ff26de1fd54b4e2e",
+      "migrated_sha256": "0e3d8e4933ad77bb53d5e761a04531fe1daebd4eb8b084d29be0258a839a21c7",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/visual/54d441d1ea9fb2b9.jpg",
+      "source": "dywa/src/data/assets/crm-panda/meshes/visual/54d441d1ea9fb2b9.jpg",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "aef016a91d7c848e882d6dee363eb66b8145615a0e850a82b66afc55c8625bd8",
+      "migrated_sha256": "aef016a91d7c848e882d6dee363eb66b8145615a0e850a82b66afc55c8625bd8",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/visual/finger.dae",
+      "source": "dywa/src/data/assets/crm-panda/meshes/visual/finger.dae",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "a9d5471e9cdf76f85493df6fe6c76d29810edd21577c204009160496d5b77fbb",
+      "migrated_sha256": "e7a447a9943ed4b0385b228de49409b71fe603ebff7c12bcbc0ea6e16206ff62",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/visual/hand.dae",
+      "source": "dywa/src/data/assets/crm-panda/meshes/visual/hand.dae",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "9602bbad114cfefd4bbb0cd0a57f3021bce9efbaaa1604a5e72bfb76926bb019",
+      "migrated_sha256": "01259e1c53b158db0e304b5da131a9fd1f5205f273d5e2300aec839375e671de",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/visual/link0.dae",
+      "source": "dywa/src/data/assets/crm-panda/meshes/visual/link0.dae",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "d9ceaa66bb3a734e3a32f2f737ae57a29e922f4a962ed77b9bb8d8e25cd33159",
+      "migrated_sha256": "8520232d4fc2cff0a5d4e360c9bf1be10b3be6bb4327cfb26356e1051b5d2e10",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/visual/link1.dae",
+      "source": "dywa/src/data/assets/crm-panda/meshes/visual/link1.dae",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "9c8b7b7c1217d620a811fc0ee52d1d1b0e1470de955e7453872aac3f15cf7c5e",
+      "migrated_sha256": "07c4a0a53d77d9a459e347355db0c3fe4c64c64fb7448ecdd398620da49c1df1",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/visual/link2.dae",
+      "source": "dywa/src/data/assets/crm-panda/meshes/visual/link2.dae",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "c44d0364f0030007e427106a4e842d835ca43902716cc46ee4f3342dab189e12",
+      "migrated_sha256": "18180c0fc3c4cc9aeec7d4f8f266a3c7e8c9b00c562fb5008cab3ff875a07427",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/visual/link3.dae",
+      "source": "dywa/src/data/assets/crm-panda/meshes/visual/link3.dae",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "dab39a126153fb82f3650cca6de63a8e978f851aa5020a8e91b3d9d548dbba3d",
+      "migrated_sha256": "314601331761991c75109837ad06fa1291e42e29add1f589c438b6fa81500a2d",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/visual/link4.dae",
+      "source": "dywa/src/data/assets/crm-panda/meshes/visual/link4.dae",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "9e03d680e3a4a4555d673bcb8cb466e479f5cb069a5fc8a0b0f99c089c50fd63",
+      "migrated_sha256": "df5dc2ea4fe209b7cc11324d8f6d194c081e4e94ac57d325eec1c1f623a70bf7",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/visual/link5.dae",
+      "source": "dywa/src/data/assets/crm-panda/meshes/visual/link5.dae",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "0be76681192578a14d6ace89527e4ee418f7395e825e285125e05fd998d24e3e",
+      "migrated_sha256": "9007e8599469877eeccfa2bbe730c453105bef311f513f037471aaaa9e718635",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/visual/link6.dae",
+      "source": "dywa/src/data/assets/crm-panda/meshes/visual/link6.dae",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "ed9c57432b079d55b9954775f2ddfe34e8b904f683949b8eb6314238f8afa46e",
+      "migrated_sha256": "b5030713277545b6e1c839fc4f6c50d53c29645d89df69ea3d5b4602dda2913f",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/meshes/visual/link7.dae",
+      "source": "dywa/src/data/assets/crm-panda/meshes/visual/link7.dae",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "71be614f734bd27b2d7dec3e8bb022251cbbfce38b0a12dbfc1b88bc0513822a",
+      "migrated_sha256": "71740e23b6bb12cc5a535905b516fe27ec401616704c7869c1d607255f778b67",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/robots/franka_panda.urdf",
+      "source": "dywa/src/data/assets/crm-panda/robots/franka_panda.urdf",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "b797f783a6fda83d516dff49cec9c5134b5ead5b633a2a716f07d7560003d701",
+      "migrated_sha256": "bffcf457ba9e495d6cc05e4b37361737927ff55b203c89e37d9e4f1ae6b6aa84",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/robots/franka_panda_fixed_finger.urdf",
+      "source": "dywa/src/data/assets/crm-panda/robots/franka_panda_fixed_finger.urdf",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "e9c13d0ff94c13873f5fa85d3476d7c252939d83a31f760b282fef8b97a1ec86",
+      "migrated_sha256": "60addb601555a49b367cbdf024e6446647acf5e173c2951c0953a0fcd12b9f1a",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/robots/franka_panda_fixed_finger_open.urdf",
+      "source": "dywa/src/data/assets/crm-panda/robots/franka_panda_fixed_finger_open.urdf",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "f658a7e6af1ec1ef0463d593494d38dee31fdaba76b3279cfa10c4de21741d6d",
+      "migrated_sha256": "e47b6fc0a1c6d9bdea54440e825adf819d77152cfce2016445445aa0db6035d9",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/assets/crm-panda/robots/franka_panda_weight.urdf",
+      "source": "dywa/src/data/assets/crm-panda/robots/franka_panda_weight.urdf",
+      "source_set": "contact_future_20260809",
+      "reason": "Franka asset",
+      "source_sha256": "db101b3e08f2ce2ab3cc7821dfeee8940a2025bb8ab8b7c18ef2bc7e94a860aa",
+      "migrated_sha256": "bffcf457ba9e495d6cc05e4b37361737927ff55b203c89e37d9e4f1ae6b6aa84",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/cfg/agent/rppov4.yaml",
+      "source": "dywa/src/data/cfg/agent/rppov4.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "e3dca844aed8f327aa17095a3c406293f2910a2b8dadd1b02ad1b0e9ebebf2a9",
+      "migrated_sha256": "e3dca844aed8f327aa17095a3c406293f2910a2b8dadd1b02ad1b0e9ebebf2a9",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/env/abs_goal_1view.yaml",
+      "source": "dywa/src/data/cfg/env/abs_goal_1view.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "dd0ac2fe8cd03b1786fd0105b6da44c2398ef32b427152fb670fe40f0a4322ea",
+      "migrated_sha256": "1ee179f6ed4c50452dd9694ae70876cb0e18765e7ac10aff9c5cd947b59e0ce2",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/cfg/env/abs_goal_1view_ral_v2.yaml",
+      "source": "dywa/src/data/cfg/env/abs_goal_1view_ral_v2.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "7eb4759cd5ae0533d53cdbfd7ea207cc26a9394aaeee4c97c4e9aff77ddb373d",
+      "migrated_sha256": "7eb4759cd5ae0533d53cdbfd7ea207cc26a9394aaeee4c97c4e9aff77ddb373d",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/env/abs_goal_3view.yaml",
+      "source": "dywa/src/data/cfg/env/abs_goal_3view.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "4a677d5a83c43c196808f3582eb58bd81caf756a3d4901b0a41a92b5f8e0ecf7",
+      "migrated_sha256": "4a677d5a83c43c196808f3582eb58bd81caf756a3d4901b0a41a92b5f8e0ecf7",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/env/abs_goal_3view_ral_v2.yaml",
+      "source": "dywa/src/data/cfg/env/abs_goal_3view_ral_v2.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "713d8e82f86a031333b8d762b62da14711256202ee85fc39cf24efa72129c9b0",
+      "migrated_sha256": "713d8e82f86a031333b8d762b62da14711256202ee85fc39cf24efa72129c9b0",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/env/arm_div_base.yaml",
+      "source": "dywa/src/data/cfg/env/arm_div_base.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "39193947900b86871610989b5814103371613946745d83859a00c802c835a3d1",
+      "migrated_sha256": "deadcfedccbae3edeea55debe8489324003c31ff9062bb386f2571cfa1bb11eb",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/cfg/env/icra_base.yaml",
+      "source": "dywa/src/data/cfg/env/icra_base.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "c59056ab82b89ce855063fd39a910c5e3af466846efe0625dcc10efcf9a538eb",
+      "migrated_sha256": "c59056ab82b89ce855063fd39a910c5e3af466846efe0625dcc10efcf9a538eb",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/env/icra_base_rma_mc.yaml",
+      "source": "dywa/src/data/cfg/env/icra_base_rma_mc.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "4852b96f4e5f7e773479b62d0a3616131ed94482ca0fb4da7d39e9d196f7182c",
+      "migrated_sha256": "ea9f0c4138158bb611efdf7b6527ff19111bfb429298dd98eb02f192559aa8e2",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/cfg/net/aggregator/gru.yaml",
+      "source": "dywa/src/data/cfg/net/aggregator/gru.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "7ca84dd7f50cf367b85b9edb4d2c293591f1dd94daad968a800820d1c6802866",
+      "migrated_sha256": "a66df86675a1708d158c84fa952b38eb266ee72aecf05d0345e87a898abace4d",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/cfg/net/aggregator/noop.yaml",
+      "source": "dywa/src/data/cfg/net/aggregator/noop.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "e61d023877e2c259660c3517e3a0a2b78cb81d65c399630c6c44d6ce3c83d0a9",
+      "migrated_sha256": "5922be825806ad2d54d53e889b8e1928da50abc9a0fc4a73e6f2fd71d52ec44d",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/cfg/net/feature/noop.yaml",
+      "source": "dywa/src/data/cfg/net/feature/noop.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "c7c011986b540bc6edd5c5f68d63334151be477c94a44b3b122b7e27d5129818",
+      "migrated_sha256": "c7c011986b540bc6edd5c5f68d63334151be477c94a44b3b122b7e27d5129818",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/net/feature/point.yaml",
+      "source": "dywa/src/data/cfg/net/feature/point.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "4bf577982c99b5f68da7bece0a71ceb3e084c34278548c63268506839bc7238c",
+      "migrated_sha256": "4bf577982c99b5f68da7bece0a71ceb3e084c34278548c63268506839bc7238c",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/net/feature/pose.yaml",
+      "source": "dywa/src/data/cfg/net/feature/pose.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "e38d868cb7965e9652845f5f59ebedb37ce9d225ef1bb77c95a0cbe610dfae0d",
+      "migrated_sha256": "9443472684dfc78779ec74a2f9390d430fc66b5ef82378b4574e10d7604f24a1",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/cfg/net/fuser/mlp.yaml",
+      "source": "dywa/src/data/cfg/net/fuser/mlp.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "9fece3c7d3262a27fdeab8b8249e1feddf315e58907bfe595ef2dd663c97facc",
+      "migrated_sha256": "9fece3c7d3262a27fdeab8b8249e1feddf315e58907bfe595ef2dd663c97facc",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/net/policy/mlp_actor.yaml",
+      "source": "dywa/src/data/cfg/net/policy/mlp_actor.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "e6079fe518401d47ad30393cecf19cfb90d850b813bd05b496e07db9a5dd7dde",
+      "migrated_sha256": "e6079fe518401d47ad30393cecf19cfb90d850b813bd05b496e07db9a5dd7dde",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/net/policy/mlp_value.yaml",
+      "source": "dywa/src/data/cfg/net/policy/mlp_value.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "b776362d0f766c098c764c85b39319387c261410bacd3b2159b005db72ada1eb",
+      "migrated_sha256": "b776362d0f766c098c764c85b39319387c261410bacd3b2159b005db72ada1eb",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/net/policy_default.yaml",
+      "source": "dywa/src/data/cfg/net/policy_default.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "124494418dcdb4ca0c7717873d6e0724b3fe1d5a0944748564355196254d226d",
+      "migrated_sha256": "124494418dcdb4ca0c7717873d6e0724b3fe1d5a0944748564355196254d226d",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/net/state/gru.yaml",
+      "source": "dywa/src/data/cfg/net/state/gru.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "5afc1a1f8eca90bd864970150a7d848ec0b74a3d0ffb8b3efd0303c2644d9097",
+      "migrated_sha256": "5afc1a1f8eca90bd864970150a7d848ec0b74a3d0ffb8b3efd0303c2644d9097",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/net/state_default.yaml",
+      "source": "dywa/src/data/cfg/net/state_default.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "51e2b7aa1665cdbf23fe2186c1a665a229b70b4aed74a2133998993ad74eb4d9",
+      "migrated_sha256": "51e2b7aa1665cdbf23fe2186c1a665a229b70b4aed74a2133998993ad74eb4d9",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/platform/debug.yaml",
+      "source": "dywa/src/data/cfg/platform/debug.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "a310dc67eaee0bced80749ff103acbde52d3bbba2e6edb13149c52d5597dcbb6",
+      "migrated_sha256": "a310dc67eaee0bced80749ff103acbde52d3bbba2e6edb13149c52d5597dcbb6",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/run/../net/aggregator/noop.yaml",
+      "source": "dywa/src/data/cfg/run/../net/aggregator/noop.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "e61d023877e2c259660c3517e3a0a2b78cb81d65c399630c6c44d6ce3c83d0a9",
+      "migrated_sha256": "5922be825806ad2d54d53e889b8e1928da50abc9a0fc4a73e6f2fd71d52ec44d",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/cfg/run/../net/feature/cloud.yaml",
+      "source": "dywa/src/data/cfg/run/../net/feature/cloud.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "9d0fc393f2fe7fc87d1f5098f17ee227327665638264f7abb57826d8b4e90475",
+      "migrated_sha256": "9d0fc393f2fe7fc87d1f5098f17ee227327665638264f7abb57826d8b4e90475",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/run/../net/feature/noop.yaml",
+      "source": "dywa/src/data/cfg/run/../net/feature/noop.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "c7c011986b540bc6edd5c5f68d63334151be477c94a44b3b122b7e27d5129818",
+      "migrated_sha256": "c7c011986b540bc6edd5c5f68d63334151be477c94a44b3b122b7e27d5129818",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/run/../net/feature/sd_cross.yaml",
+      "source": "dywa/src/data/cfg/run/../net/feature/sd_cross.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "2a35ed409eae46142523a53bf7bb681155a793bdfa958f54796435b9c696532e",
+      "migrated_sha256": "2a35ed409eae46142523a53bf7bb681155a793bdfa958f54796435b9c696532e",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/run/../net/state/mlp.yaml",
+      "source": "dywa/src/data/cfg/run/../net/state/mlp.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "7e3495175980dfb4a87e51407537f1e9c4113564883cf79522b4b75ada16aae5",
+      "migrated_sha256": "baa211ef53b5cd20d7a1fc0bb04581d1f5826b8f4a1fbbf2f10a16c9174b3e03",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/cfg/run/cloud_arm_mlp_base_rel.yaml",
+      "source": "dywa/src/data/cfg/run/cloud_arm_mlp_base_rel.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "7a652517f7f65e83cc8ff3c54beedc47d134c25329fef92ee6d0cc5b757daf30",
+      "migrated_sha256": "7a652517f7f65e83cc8ff3c54beedc47d134c25329fef92ee6d0cc5b757daf30",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/run/icra_ours_abs_rel.yaml",
+      "source": "dywa/src/data/cfg/run/icra_ours_abs_rel.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "e082011900db6bb5e54321d2ad2c9ecd31bba65fb853eb3f9b525819dc3ae73c",
+      "migrated_sha256": "a0a961bee2f5ac252f722b91705f4d1f09daee47279f7c3a25b6be0c12cf8489",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/cfg/run/teacher_base.yaml",
+      "source": "dywa/src/data/cfg/run/teacher_base.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "9662bc89182fbcdfa680849d52230c603bd798884cfe326cfa4d5c77be8b4f0f",
+      "migrated_sha256": "05fcec6587beb9377b5358e421b29dd5a49683121c5257a226f5654575e2fb60",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/cfg/show.yaml",
+      "source": "dywa/src/data/cfg/show.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "73df17b39339ff3622477077b03f10e155752e3e18dd5bb0b613baf18211df4c",
+      "migrated_sha256": "73df17b39339ff3622477077b03f10e155752e3e18dd5bb0b613baf18211df4c",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/cfg/student/dywa/base.yaml",
+      "source": "dywa/src/data/cfg/student/dywa/base.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "b446c16f5809bd7fc5e8d676cbc526cf97b7a0e6c9c47f2b25608a43e72a7b09",
+      "migrated_sha256": "5443b61bdf718f19fe8bc8ca03c7c5bdc630028b17f3082896139da930530e7f",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/cfg/student/rma_gru_student_base_v3.yaml",
+      "source": "dywa/src/data/cfg/student/rma_gru_student_base_v3.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "700f98c89675d8aa6db5766d011b07d5324c3ad4ffa808245c56461f1185ea23",
+      "migrated_sha256": "f3d9dd69207f49d550def593d34c33a33709b321d2b1f1ab30ab659463c91d61",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/cfg/train_rl.yaml",
+      "source": "dywa/src/data/cfg/train_rl.yaml",
+      "source_set": "contact_future_20260809",
+      "reason": "Hydra configuration dependency",
+      "source_sha256": "68afcdd07903e6c3224015bfda1df84135d3be788bc1a0b8ca736c76b74befef",
+      "migrated_sha256": "e802863ff078a763c5d3ba9dc89dc675f79ff4d3e7a331953f256f306c18bb05",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/transforms/__init__.py",
+      "source": "dywa/src/data/transforms/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/data/transforms/aff.py",
+      "source": "dywa/src/data/transforms/aff.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "13ffc1214ae68e7405ebdecd3e6d7e671118f273c5cc42a0b76e02b7fa0a50b2",
+      "migrated_sha256": "13ffc1214ae68e7405ebdecd3e6d7e671118f273c5cc42a0b76e02b7fa0a50b2",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/transforms/common.py",
+      "source": "dywa/src/data/transforms/common.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "8175e0446477516c33ad06b5bd5ef1f35c44acda2c5f033db62cfde3240d0328",
+      "migrated_sha256": "8175e0446477516c33ad06b5bd5ef1f35c44acda2c5f033db62cfde3240d0328",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/transforms/df_th3.py",
+      "source": "dywa/src/data/transforms/df_th3.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "cb672ac94ac77fe4a43e05565244daa3708321b9ff1364612627e71e1974a4f2",
+      "migrated_sha256": "cb672ac94ac77fe4a43e05565244daa3708321b9ff1364612627e71e1974a4f2",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/transforms/io_xfm.py",
+      "source": "dywa/src/data/transforms/io_xfm.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "de4fe4fe6b311b328b0b1efd2013a71b24f3579d20b6d06eb560a3aad1b47c7d",
+      "migrated_sha256": "de4fe4fe6b311b328b0b1efd2013a71b24f3579d20b6d06eb560a3aad1b47c7d",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/transforms/sample_points.py",
+      "source": "dywa/src/data/transforms/sample_points.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "886d3c61648e8f4be1ff2dbfdb988cd83102d6501f89dad967b3b14b194d6970",
+      "migrated_sha256": "886d3c61648e8f4be1ff2dbfdb988cd83102d6501f89dad967b3b14b194d6970",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/transforms/sample_viewpoint.py",
+      "source": "dywa/src/data/transforms/sample_viewpoint.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "95e725b4d0b4e98f84d72fbf663cb435318fc9c7e416218f936b036d6b441e1e",
+      "migrated_sha256": "95e725b4d0b4e98f84d72fbf663cb435318fc9c7e416218f936b036d6b441e1e",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/transforms/sdf/__init__.py",
+      "source": "dywa/src/data/transforms/sdf/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "816e3113d010abb31684674a88f1259bbe45eeb5fd368db43bbcdb9fb849df58",
+      "migrated_sha256": "816e3113d010abb31684674a88f1259bbe45eeb5fd368db43bbcdb9fb849df58",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/data/transforms/sdf/sdf_cvx_set_th3.py",
+      "source": "dywa/src/data/transforms/sdf/sdf_cvx_set_th3.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "0f597883467dd884fb770430df82dc10a9d274e1cf1be40d8ccbf4900734c418",
+      "migrated_sha256": "0f597883467dd884fb770430df82dc10a9d274e1cf1be40d8ccbf4900734c418",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/__init__.py",
+      "source": "dywa/src/env/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/arm_env.py",
+      "source": "dywa/src/env/arm_env.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "229b7154b44d2f92c34149ec3e64f6752b6625d3917a3d684408fcf2022f0236",
+      "migrated_sha256": "229b7154b44d2f92c34149ec3e64f6752b6625d3917a3d684408fcf2022f0236",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/common.py",
+      "source": "dywa/src/env/common.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "419d9d3660bcfdfb4610d0ac661f822ef1902bf68466e6293114a15c6d79bab3",
+      "migrated_sha256": "419d9d3660bcfdfb4610d0ac661f822ef1902bf68466e6293114a15c6d79bab3",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/__init__.py",
+      "source": "dywa/src/env/env/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/env/base.py",
+      "source": "dywa/src/env/env/base.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "7576e34b65ab2ca3631a04f05016a97681da495f110f75eb6570b84884059548",
+      "migrated_sha256": "72ac988fe5012c650e3a72488c5bd60b5f6e219abe75f2a97b1f2edbb999e842",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/env/help/__init__.py",
+      "source": "dywa/src/env/env/help/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/env/help/apply_camera_transform.py",
+      "source": "dywa/src/env/env/help/apply_camera_transform.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "04fe140de00dff782054e2bf125ca1c9a646394e4a82f8c6ca8e13b83068b7b7",
+      "migrated_sha256": "04fe140de00dff782054e2bf125ca1c9a646394e4a82f8c6ca8e13b83068b7b7",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/help/pid.py",
+      "source": "dywa/src/env/env/help/pid.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "173522b721b810277db5bed0ee0bb8aec75d0975899946161de7bb2318564f1f",
+      "migrated_sha256": "173522b721b810277db5bed0ee0bb8aec75d0975899946161de7bb2318564f1f",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/help/render_nvdr.py",
+      "source": "dywa/src/env/env/help/render_nvdr.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "0bd4ff96c6fcc0cbaae26f73806b8ed7d1cb234e79819dd382c2c33ef5752ecc",
+      "migrated_sha256": "0bd4ff96c6fcc0cbaae26f73806b8ed7d1cb234e79819dd382c2c33ef5752ecc",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/help/with_camera.py",
+      "source": "dywa/src/env/env/help/with_camera.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "63cf035d3dc0a216680f50c39fc95a0ff0fd4b0e7fae78652243317fb1a42908",
+      "migrated_sha256": "e5dcea089029cafe881cc2b4251eb2d18949a87988e481833729876243fb2c29",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/env/help/with_nvdr_camera.py",
+      "source": "dywa/src/env/env/help/with_nvdr_camera.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "60b5dc4c386b7249a34cfe2786435402604ba8cce194e50ec3a887f85fd08384",
+      "migrated_sha256": "90079de0806289c774cc7c5b2d3438fcfa49194d0eb4d455efab003d1f346b48",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/env/iface.py",
+      "source": "dywa/src/env/env/iface.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "fbbdd31a2947aedb06d71dc0d551cac08ee35a214ffcac879762b6f98b666383",
+      "migrated_sha256": "fbbdd31a2947aedb06d71dc0d551cac08ee35a214ffcac879762b6f98b666383",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/wrap/__init__.py",
+      "source": "dywa/src/env/env/wrap/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/env/wrap/adaptive_domain_tuner.py",
+      "source": "dywa/src/env/env/wrap/adaptive_domain_tuner.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "f56263ba53ac491070a8e33ef47856c08440e6d32a5edc058fb4767bf7147247",
+      "migrated_sha256": "f56263ba53ac491070a8e33ef47856c08440e6d32a5edc058fb4767bf7147247",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/wrap/base.py",
+      "source": "dywa/src/env/env/wrap/base.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "b54cfe07368a3f5298800e78d98477374545c4f274321343bfddbccb91531129",
+      "migrated_sha256": "c58db01e54214b976e53b73c238697039868f3b6d15a8f365303255a2e2ede76",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/env/wrap/draw_bbox_kpt.py",
+      "source": "dywa/src/env/env/wrap/draw_bbox_kpt.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "4a8c126a5ce4b51badd5ce902148847d7e39a85f9a5571a4f68da1183be12f4e",
+      "migrated_sha256": "4a8c126a5ce4b51badd5ce902148847d7e39a85f9a5571a4f68da1183be12f4e",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/wrap/draw_clouds.py",
+      "source": "dywa/src/env/env/wrap/draw_clouds.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "c6f4e395d8a0b67cb4feefd07ea5733e2c97986000903e8c86fa79b641e30ccd",
+      "migrated_sha256": "c6f4e395d8a0b67cb4feefd07ea5733e2c97986000903e8c86fa79b641e30ccd",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/wrap/draw_inertia_box.py",
+      "source": "dywa/src/env/env/wrap/draw_inertia_box.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "ad82f2f204627999258af9e09a73646b1ec4be22fa4ae32006d89808da21d657",
+      "migrated_sha256": "ad82f2f204627999258af9e09a73646b1ec4be22fa4ae32006d89808da21d657",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/wrap/draw_patch_attn.py",
+      "source": "dywa/src/env/env/wrap/draw_patch_attn.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "49c7f74301ab4802349deb8a0feb13a1febe9ce3cae642ea3f3ec36c4a70c145",
+      "migrated_sha256": "49c7f74301ab4802349deb8a0feb13a1febe9ce3cae642ea3f3ec36c4a70c145",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/wrap/monitor_env.py",
+      "source": "dywa/src/env/env/wrap/monitor_env.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "dcb2b598b4d16f49627c5ae488e6fb230ce63a83c796a7ce17f7c13387de410e",
+      "migrated_sha256": "dcb2b598b4d16f49627c5ae488e6fb230ce63a83c796a7ce17f7c13387de410e",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/wrap/mvp_wrapper.py",
+      "source": "dywa/src/env/env/wrap/mvp_wrapper.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "a86d5db09d3f1e39da7eacd08d381f24714009eb812cb4b235a1076a6f65a344",
+      "migrated_sha256": "a86d5db09d3f1e39da7eacd08d381f24714009eb812cb4b235a1076a6f65a344",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/wrap/normalize_env.py",
+      "source": "dywa/src/env/env/wrap/normalize_env.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e4c76cb7db5faaac141fe70431035ba247c9a0dbbc6788a14818ebb68205137e",
+      "migrated_sha256": "e4c76cb7db5faaac141fe70431035ba247c9a0dbbc6788a14818ebb68205137e",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/wrap/normalize_img.py",
+      "source": "dywa/src/env/env/wrap/normalize_img.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "10f95138b24224c9e4dd315bcde73c10e78864b16df6fc034170666eb32ff75e",
+      "migrated_sha256": "10f95138b24224c9e4dd315bcde73c10e78864b16df6fc034170666eb32ff75e",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/wrap/nvdr_camera_wrapper.py",
+      "source": "dywa/src/env/env/wrap/nvdr_camera_wrapper.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "906965b0b3bf881da24767399fb09b74abb14c925e4d50b74054ec335d75061f",
+      "migrated_sha256": "8444d45017bb7b4666afd2842d930b8989d457806b361e36eaa34a17716c1021",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/env/wrap/nvdr_record_episode.py",
+      "source": "dywa/src/env/env/wrap/nvdr_record_episode.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "626872ca2db901b91933b87eb42a8ea9cc8f0e4afd1a00d23b23a41821c78d71",
+      "migrated_sha256": "2d513eebbf60237c003e5f5bfd9030af8b9606c34b4884a5ae8c3250297e03d0",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/env/wrap/nvdr_record_viewer.py",
+      "source": "dywa/src/env/env/wrap/nvdr_record_viewer.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "b4f7a2ebb079d67968eb62f68a3e37f63d568a9e926512733c5815dcdfc8679a",
+      "migrated_sha256": "b4f7a2ebb079d67968eb62f68a3e37f63d568a9e926512733c5815dcdfc8679a",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/wrap/plotly_wrapper.py",
+      "source": "dywa/src/env/env/wrap/plotly_wrapper.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "5f86cdd7f17000c1050026a68d7313abf635745331638d662ccae108e1060f37",
+      "migrated_sha256": "2995aadadeed127f39daa13bca464e12e0ca919be526b2fcee08b7284721b50b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/env/wrap/popdict.py",
+      "source": "dywa/src/env/env/wrap/popdict.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "f0e02ead15b66edb1b610bec9c1bc1a3aa0fc7640f6c949e7effb5f06bf61104",
+      "migrated_sha256": "f0e02ead15b66edb1b610bec9c1bc1a3aa0fc7640f6c949e7effb5f06bf61104",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/wrap/record_traj.py",
+      "source": "dywa/src/env/env/wrap/record_traj.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "408cc8b189bc05de3d788f770fadc13d0472dff7a039cbcdd7c027ce0efa5bb9",
+      "migrated_sha256": "3bcda48a293d1283a9950a141d842b1988b41b1cec1084aa048075be6282bdb2",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/env/wrap/record_viewer.py",
+      "source": "dywa/src/env/env/wrap/record_viewer.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "3fb29a434ee7f1708b1b44aceaf102fdfa0cbdbbe3b1193eb2ee0fe9eeeeac19",
+      "migrated_sha256": "3fb29a434ee7f1708b1b44aceaf102fdfa0cbdbbe3b1193eb2ee0fe9eeeeac19",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/wrap/tabulate_action.py",
+      "source": "dywa/src/env/env/wrap/tabulate_action.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "6827754f8b2a313bd732505c9200a659d4f1e9ebb2d5bb6c3778b4e8d0f5507c",
+      "migrated_sha256": "6827754f8b2a313bd732505c9200a659d4f1e9ebb2d5bb6c3778b4e8d0f5507c",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/wrap/with_ig_camera.py",
+      "source": "dywa/src/env/env/wrap/with_ig_camera.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "37281fdc327d5f4a343ff539dc84553d4d85cee72a49a659742e0b982fc4e326",
+      "migrated_sha256": "37281fdc327d5f4a343ff539dc84553d4d85cee72a49a659742e0b982fc4e326",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/env/wrap/zero_out_obs.py",
+      "source": "dywa/src/env/env/wrap/zero_out_obs.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "a3af7a94f3903cd413e414fe6a08ea59da8e901c8538372e2dc5b64c09d77e31",
+      "migrated_sha256": "a3af7a94f3903cd413e414fe6a08ea59da8e901c8538372e2dc5b64c09d77e31",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/push_env.py",
+      "source": "dywa/src/env/push_env.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "35b65f0f32f13b8b1a814af5a6e92a2337a7d764093e36138ac9dd923597a47f",
+      "migrated_sha256": "35b65f0f32f13b8b1a814af5a6e92a2337a7d764093e36138ac9dd923597a47f",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/robot/__init__.py",
+      "source": "dywa/src/env/robot/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/robot/base.py",
+      "source": "dywa/src/env/robot/base.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "36432dfb3930341342691246af5f3e1846be49f2fd6de7ae19b01a38ccd71a21",
+      "migrated_sha256": "36432dfb3930341342691246af5f3e1846be49f2fd6de7ae19b01a38ccd71a21",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/robot/cube_poker.py",
+      "source": "dywa/src/env/robot/cube_poker.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "fd8104a43d8a34e2c3d3ca1a65a30aabe756fad61ff3eb02da27191979dd710f",
+      "migrated_sha256": "fd8104a43d8a34e2c3d3ca1a65a30aabe756fad61ff3eb02da27191979dd710f",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/robot/fe_gripper.py",
+      "source": "dywa/src/env/robot/fe_gripper.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "734adb7d2a7bf42b3c702bccaaeab76186b1696c561c49b7aa77656652c5b262",
+      "migrated_sha256": "734adb7d2a7bf42b3c702bccaaeab76186b1696c561c49b7aa77656652c5b262",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/robot/franka.py",
+      "source": "dywa/src/env/robot/franka.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "5b3be8acd6c5a7c415f88e715a22e105ffb1b21b2b87c9247aae84f96985757f",
+      "migrated_sha256": "5b3be8acd6c5a7c415f88e715a22e105ffb1b21b2b87c9247aae84f96985757f",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/robot/franka_kin.py",
+      "source": "dywa/src/env/robot/franka_kin.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "977b4586d410cd938b9aadd69188f5c8fb8ae18ab18a5b8e2742fcc981183256",
+      "migrated_sha256": "977b4586d410cd938b9aadd69188f5c8fb8ae18ab18a5b8e2742fcc981183256",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/robot/franka_util.py",
+      "source": "dywa/src/env/robot/franka_util.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "0604944a322909f7d5d562fc5c049e5f245b2fde762baf0d2884a1bb4ffb97fe",
+      "migrated_sha256": "832b7993fc1659135bd7f137ce9ef056c549b25a142b9cf47fa2144556872e35",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/robot/object_poker.py",
+      "source": "dywa/src/env/robot/object_poker.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "9a4823312643db3d78d9429f367b6833b158c31c33b5feca101cd260beb43f94",
+      "migrated_sha256": "9a4823312643db3d78d9429f367b6833b158c31c33b5feca101cd260beb43f94",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/robot/push_stick.py",
+      "source": "dywa/src/env/robot/push_stick.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "0ce87053509172481148e4ec4b71202f713dbc23eb9619c4d1ba792b80b274de",
+      "migrated_sha256": "0ce87053509172481148e4ec4b71202f713dbc23eb9619c4d1ba792b80b274de",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/robot/ur5_fe.py",
+      "source": "dywa/src/env/robot/ur5_fe.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "d223eda5edb519e3a1c1827338d9871009765414b56f995ca5e339ad754c54ef",
+      "migrated_sha256": "d223eda5edb519e3a1c1827338d9871009765414b56f995ca5e339ad754c54ef",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/robot/ur5_ik.py",
+      "source": "dywa/src/env/robot/ur5_ik.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "9fac28e6cfb300794167e7a13e0c7c6fb7743d44e3263dd85381dd7b5824c101",
+      "migrated_sha256": "9fac28e6cfb300794167e7a13e0c7c6fb7743d44e3263dd85381dd7b5824c101",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/robot/virtual_poker.py",
+      "source": "dywa/src/env/robot/virtual_poker.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "70939cbd6ba1ca6a696267821066dc20a1a520527f0e8cf5e596d432d5a43651",
+      "migrated_sha256": "70939cbd6ba1ca6a696267821066dc20a1a520527f0e8cf5e596d432d5a43651",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/scene/__init__.py",
+      "source": "dywa/src/env/scene/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/scene/acronym_object_set.py",
+      "source": "dywa/src/env/scene/acronym_object_set.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "6d2ab7fea91247228193400e6a84b3a40473f5cf4fbd43bfa07dbfa2dec57283",
+      "migrated_sha256": "6d2ab7fea91247228193400e6a84b3a40473f5cf4fbd43bfa07dbfa2dec57283",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/scene/apply_coacd.py",
+      "source": "dywa/src/env/scene/apply_coacd.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "4700f4283f276b28f91a62bd138ac8a098e55dbb55419d050a386a764e3e376b",
+      "migrated_sha256": "4700f4283f276b28f91a62bd138ac8a098e55dbb55419d050a386a764e3e376b",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/scene/base.py",
+      "source": "dywa/src/env/scene/base.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "a4a8a91443e9ea5159bdc217a26a3ff2d717cf714fdaa65b78ab761a3c9a2aa1",
+      "migrated_sha256": "a4a8a91443e9ea5159bdc217a26a3ff2d717cf714fdaa65b78ab761a3c9a2aa1",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/scene/combine_object_set.py",
+      "source": "dywa/src/env/scene/combine_object_set.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "225e63298aafae871d870b8779f44e67b5c41035b54808b79befcd68d7ea1249",
+      "migrated_sha256": "225e63298aafae871d870b8779f44e67b5c41035b54808b79befcd68d7ea1249",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/scene/common.py",
+      "source": "dywa/src/env/scene/common.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "1582e2e56d86c53328f7b35bc5a10cf1d81740f73e076b2da18b2bdfcae4f83b",
+      "migrated_sha256": "1582e2e56d86c53328f7b35bc5a10cf1d81740f73e076b2da18b2bdfcae4f83b",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/scene/cone_object_set.py",
+      "source": "dywa/src/env/scene/cone_object_set.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "b36d63621ca0bb8c07232dd967f6250acb4a85a58b47e46a868f527bb626f782",
+      "migrated_sha256": "b36d63621ca0bb8c07232dd967f6250acb4a85a58b47e46a868f527bb626f782",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/scene/cuboid_object_set.py",
+      "source": "dywa/src/env/scene/cuboid_object_set.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "349e64777d091ad05c46790ed32b3772266929351300c5a20e04b9ff897bc812",
+      "migrated_sha256": "4acaadaa9cc9a15090a26c348b3dad71410381618d866f43467cde961759d32f",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/scene/cylinder_object_set.py",
+      "source": "dywa/src/env/scene/cylinder_object_set.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "d2d94ea699ed0de600e4ab163028a206cee62d8e1b6d853e21d28fb6ccfb304e",
+      "migrated_sha256": "2c2ec6ec2bb5e307a64efa280aa488364c0fda2d9ac34854ad97678bb6093b35",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/scene/dgn_object_set.py",
+      "source": "dywa/src/env/scene/dgn_object_set.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "0397f0718caf844cc0d9c2ad9206561250c8e44e8d7c7a3f757b97b026853724",
+      "migrated_sha256": "0397f0718caf844cc0d9c2ad9206561250c8e44e8d7c7a3f757b97b026853724",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/scene/filter_object_set.py",
+      "source": "dywa/src/env/scene/filter_object_set.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "0b8f4fcc36665de785abd8b32490794d0379df53a9bdb9371563c45c25071b99",
+      "migrated_sha256": "0b8f4fcc36665de785abd8b32490794d0379df53a9bdb9371563c45c25071b99",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/scene/mesh_object_set.py",
+      "source": "dywa/src/env/scene/mesh_object_set.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "abb19a836e00206a437522c846af332e63cdee5319084e1c9b00b4091961facd",
+      "migrated_sha256": "abb19a836e00206a437522c846af332e63cdee5319084e1c9b00b4091961facd",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/scene/object_set.py",
+      "source": "dywa/src/env/scene/object_set.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "c166add573092307df67239c51477ed1790d40882424b4c9718b741faebcdb21",
+      "migrated_sha256": "c166add573092307df67239c51477ed1790d40882424b4c9718b741faebcdb21",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/scene/prism_object_set.py",
+      "source": "dywa/src/env/scene/prism_object_set.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "0f6df57a1ad31a1d7384684af4db94400b1c5c53c594b5196096433c04685cc6",
+      "migrated_sha256": "3da8bfa0eccc966f879a12894e3cd0607aa4ae8a034a8e6304a8be87471b51c0",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/scene/scenario_object_set.py",
+      "source": "dywa/src/env/scene/scenario_object_set.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "a061ddf6a49371ef818b04bc85445ccd89296f074212fc17a0ac7d9d8dd2f440",
+      "migrated_sha256": "10f3067dbcd328b527689eceb2fc79540ee9ac616add30c5127e428f16cda613",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/scene/tabletop_scene.py",
+      "source": "dywa/src/env/scene/tabletop_scene.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "82547793bea5b777f6680e1d3f3512b42e0add97ec793ef31ece4fff5eb183bf",
+      "migrated_sha256": "82547793bea5b777f6680e1d3f3512b42e0add97ec793ef31ece4fff5eb183bf",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/scene/tabletop_with_cube_scene.py",
+      "source": "dywa/src/env/scene/tabletop_with_cube_scene.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "babef95a4859cb28085d47a424d0894df05be7f601e0387ed519d978ec7f2f23",
+      "migrated_sha256": "babef95a4859cb28085d47a424d0894df05be7f601e0387ed519d978ec7f2f23",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/scene/tabletop_with_multi_object_scene.py",
+      "source": "dywa/src/env/scene/tabletop_with_multi_object_scene.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "8d6b47b5ab0f98d91fb70d40983bffb205294e5e462affae1f3804e4ec343db7",
+      "migrated_sha256": "8d6b47b5ab0f98d91fb70d40983bffb205294e5e462affae1f3804e4ec343db7",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/scene/tabletop_with_object_scene.py",
+      "source": "dywa/src/env/scene/tabletop_with_object_scene.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e72438ffbe879b9036f75200f6a98d1400acaa63011618a4d97758477094bf13",
+      "migrated_sha256": "e72438ffbe879b9036f75200f6a98d1400acaa63011618a4d97758477094bf13",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/scene/util.py",
+      "source": "dywa/src/env/scene/util.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "ed909232fc2e1f8c002526e6f439afcac2c6513e05e38dc3ac8771f0f24198b5",
+      "migrated_sha256": "ed909232fc2e1f8c002526e6f439afcac2c6513e05e38dc3ac8771f0f24198b5",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/task/__init__.py",
+      "source": "dywa/src/env/task/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/task/base.py",
+      "source": "dywa/src/env/task/base.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "f963aef408d7029a2f8fb094d8aaf1848de3badd28e2cd87a8b354183f2cfd49",
+      "migrated_sha256": "f963aef408d7029a2f8fb094d8aaf1848de3badd28e2cd87a8b354183f2cfd49",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/task/push_task.py",
+      "source": "dywa/src/env/task/push_task.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "533ce159f8a214e6a9990d861aa3946fee03e85c69247ab904d9ffe723ed8299",
+      "migrated_sha256": "533ce159f8a214e6a9990d861aa3946fee03e85c69247ab904d9ffe723ed8299",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/task/push_with_arm_task.py",
+      "source": "dywa/src/env/task/push_with_arm_task.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "7216e01628242fc70e0688516715d6e07dad43ee3443305adb4321fd47f9f44a",
+      "migrated_sha256": "cb99781d626605339cc24c777912f786ff00e965cd7079a77b2c81460fc8d230",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/env/task/push_with_cube_task.py",
+      "source": "dywa/src/env/task/push_with_cube_task.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "ae37f5df0e56252acc9850bc2f25c0c75859195d4d25b48fccee1c9e015c3fb0",
+      "migrated_sha256": "ae37f5df0e56252acc9850bc2f25c0c75859195d4d25b48fccee1c9e015c3fb0",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/task/push_with_hand_task.py",
+      "source": "dywa/src/env/task/push_with_hand_task.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "2b338a0a5110ae8c67c1a4f0f3cdd5082c1522abdd9708a241c2f7480d5ac06b",
+      "migrated_sha256": "2b338a0a5110ae8c67c1a4f0f3cdd5082c1522abdd9708a241c2f7480d5ac06b",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/task/util.py",
+      "source": "dywa/src/env/task/util.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "c8b7d64eed4bb22a2ed3fc927f97a56b698f23eeb2eabb0bd271740ad6be72a3",
+      "migrated_sha256": "c8b7d64eed4bb22a2ed3fc927f97a56b698f23eeb2eabb0bd271740ad6be72a3",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/env/util.py",
+      "source": "dywa/src/env/util.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "2db809f64a34b73d0dc555f46fdc895b587e21c8d5960221362f7eab45d97f89",
+      "migrated_sha256": "2db809f64a34b73d0dc555f46fdc895b587e21c8d5960221362f7eab45d97f89",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/__init__.py",
+      "source": "dywa/src/models/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/models/cloud/__init__.py",
+      "source": "dywa/src/models/cloud/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/models/cloud/point_mae.py",
+      "source": "dywa/src/models/cloud/point_mae.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "eef3563510c1a200462cf01b0fa090c33c7e7c3c74697a94ae4eb6e184f9c33f",
+      "migrated_sha256": "78deff4f9b883897abd0f5fbe39fa17570b2f3511719213926a6a89efa77f52e",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/models/common.py",
+      "source": "dywa/src/models/common.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "f99bc7027d20a1feaf00a639c95de41abc917ed0835e22d68c61355a7509466b",
+      "migrated_sha256": "16853fd8af1459ffef946c6530d06836737deaa8f67f2e49fcb50444f4500ba0",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/models/modules.py",
+      "source": "dywa_history/modules.py",
+      "source_set": "history_repairs_20261021",
+      "reason": "DyWA persistent history repair",
+      "source_sha256": "646661c74a3eabb5a5cb1222ef99608223d9b3c6c34d1890a4ce4224f4ba319e",
+      "migrated_sha256": "208ab699229fb8e73dcdaa2fdc9e8c02190c1aab1403b3367ab73df82980663f",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/models/pointnet2.py",
+      "source": "dywa/src/models/pointnet2.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "477e785ebba1d2d27fac9a5ba05bf0b7827b2be3d1ba8f56f1604190981acb95",
+      "migrated_sha256": "51c9bb039f1fcc8d9e4fa8a3cbeb57400677276bb1bc19049005a1b603fc1995",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/models/rl/__init__.py",
+      "source": "dywa/src/models/rl/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/models/rl/adaptive_lr.py",
+      "source": "dywa/src/models/rl/adaptive_lr.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "ce0a9079bbb03687da6e5487ee724cafeb2776400e29c8ba452500770c92f519",
+      "migrated_sha256": "ce0a9079bbb03687da6e5487ee724cafeb2776400e29c8ba452500770c92f519",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/env_normalizer.py",
+      "source": "dywa/src/models/rl/env_normalizer.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "541a276e884ad5d1134f534b674c4b1c1efb6bb1554337697d0b29b2126f6156",
+      "migrated_sha256": "541a276e884ad5d1134f534b674c4b1c1efb6bb1554337697d0b29b2126f6156",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/generic_state_encoder.py",
+      "source": "dywa/src/models/rl/generic_state_encoder.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "003e3710c1d9c3373a728f52f37c1c515e7b3476ea481666ac0ffd8a29d9512f",
+      "migrated_sha256": "e833c910901e479035849c2d91732fd0caecf1e5992f3ddc2d006b849fb91d34",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/models/rl/kl_adaptive_lr_scheduler.py",
+      "source": "dywa/src/models/rl/kl_adaptive_lr_scheduler.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "3d8047be2f6fff1b293903d165f9e27e4a24b7a547e814fef3d3bf4663f30ddb",
+      "migrated_sha256": "3d8047be2f6fff1b293903d165f9e27e4a24b7a547e814fef3d3bf4663f30ddb",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/__init__.py",
+      "source": "dywa/src/models/rl/net/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/models/rl/net/base.py",
+      "source": "dywa/src/models/rl/net/base.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "8c9e91de6ada3c819db34267da56746f6b2dde0753efb85c58b43cfb99e57ca2",
+      "migrated_sha256": "8c9e91de6ada3c819db34267da56746f6b2dde0753efb85c58b43cfb99e57ca2",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/cross.py",
+      "source": "dywa/src/models/rl/net/cross.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "fc881f685473beb1440f3c1a85a72cc29a4cb22a2e6b106c31fc5571ba60e102",
+      "migrated_sha256": "fc881f685473beb1440f3c1a85a72cc29a4cb22a2e6b106c31fc5571ba60e102",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/flat_mlp.py",
+      "source": "dywa/src/models/rl/net/flat_mlp.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "2937eef28a9782b7e23ddbdd992d26260e38fb5b63717bfe7534753068e5d023",
+      "migrated_sha256": "2937eef28a9782b7e23ddbdd992d26260e38fb5b63717bfe7534753068e5d023",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/flatten.py",
+      "source": "dywa/src/models/rl/net/flatten.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "66913a245c4304416f932719bb52d7a8624b6d28d8ea1e4dec76bd6669cdf244",
+      "migrated_sha256": "66913a245c4304416f932719bb52d7a8624b6d28d8ea1e4dec76bd6669cdf244",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/gru.py",
+      "source": "dywa/src/models/rl/net/gru.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "56f00982aa274266d817aa914bf64a2024d861ea11f5c787c5d6a9279b6c034e",
+      "migrated_sha256": "56f00982aa274266d817aa914bf64a2024d861ea11f5c787c5d6a9279b6c034e",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/icp.py",
+      "source": "dywa/src/models/rl/net/icp.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "ab0f7b8a3760ee340586152db9d46cb6c54d20be72591e006dae03112f33fb8b",
+      "migrated_sha256": "ab0f7b8a3760ee340586152db9d46cb6c54d20be72591e006dae03112f33fb8b",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/mae/__init__.py",
+      "source": "dywa/src/models/rl/net/mae/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/models/rl/net/mae/fast_attn.py",
+      "source": "dywa/src/models/rl/net/mae/fast_attn.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "8bb11feffed6185459ab0b4a947456aa1086a9789b4425845baf1fcfd706e6ff",
+      "migrated_sha256": "8bb11feffed6185459ab0b4a947456aa1086a9789b4425845baf1fcfd706e6ff",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/mlp.py",
+      "source": "dywa/src/models/rl/net/mlp.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "52cafb5b450e2e74f4055c6c5a23b52d385b1b3dcb30a0f6a80995641ddf8845",
+      "migrated_sha256": "52cafb5b450e2e74f4055c6c5a23b52d385b1b3dcb30a0f6a80995641ddf8845",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/no_op.py",
+      "source": "dywa/src/models/rl/net/no_op.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "8a72b2eb78e44e6cf4f6ee8d3cfb772863d124f3be95e683b875809d9098e9eb",
+      "migrated_sha256": "8a72b2eb78e44e6cf4f6ee8d3cfb772863d124f3be95e683b875809d9098e9eb",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/point_patch.py",
+      "source": "dywa/src/models/rl/net/point_patch.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "20cfce8417c5ff5fecea72bae99d1c87db402b2efa075cb9a45186d16d480183",
+      "migrated_sha256": "20cfce8417c5ff5fecea72bae99d1c87db402b2efa075cb9a45186d16d480183",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/point_patch_v2.py",
+      "source": "dywa/src/models/rl/net/point_patch_v2.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "6ca81d0f047f72e644fd59db63f6859677084c7cf3938291b754d6fe8969a740",
+      "migrated_sha256": "6ca81d0f047f72e644fd59db63f6859677084c7cf3938291b754d6fe8969a740",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/point_patch_v3.py",
+      "source": "dywa/src/models/rl/net/point_patch_v3.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "9045e6c4707a61cf0efaa987764cd47c4bd5671a467b298b54ebd3d86a0711cf",
+      "migrated_sha256": "9045e6c4707a61cf0efaa987764cd47c4bd5671a467b298b54ebd3d86a0711cf",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/point_patch_v4.py",
+      "source": "dywa/src/models/rl/net/point_patch_v4.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "a035c3a8e59fd8435c0588320cebbf9d77e1c00d095fb9613639b18d3038fa65",
+      "migrated_sha256": "a035c3a8e59fd8435c0588320cebbf9d77e1c00d095fb9613639b18d3038fa65",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/point_patch_v5.py",
+      "source": "dywa/src/models/rl/net/point_patch_v5.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "9b5e870411fc04d6af433fc94d336d188dca81e9f5958db88160ba6bf0f220c3",
+      "migrated_sha256": "9b5e870411fc04d6af433fc94d336d188dca81e9f5958db88160ba6bf0f220c3",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/point_patch_v7.py",
+      "source": "dywa/src/models/rl/net/point_patch_v7.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "ffe8fd462507dc3ff1da6bbb85cd9fc70c476b87c4c0fb883fe8e4055a097427",
+      "migrated_sha256": "ffe8fd462507dc3ff1da6bbb85cd9fc70c476b87c4c0fb883fe8e4055a097427",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/point_patch_v8.py",
+      "source": "dywa/src/models/rl/net/point_patch_v8.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "98fdd0534e98edd069679207378e7b606a63f26e0ee2a2ba9bc8024f29da6111",
+      "migrated_sha256": "98fdd0534e98edd069679207378e7b606a63f26e0ee2a2ba9bc8024f29da6111",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/pointnet.py",
+      "source": "dywa/src/models/rl/net/pointnet.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "220b594ade4568bcc811fb355282d770951454abe3719049ddc57a01358b5da8",
+      "migrated_sha256": "220b594ade4568bcc811fb355282d770951454abe3719049ddc57a01358b5da8",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/pw_attn.py",
+      "source": "dywa/src/models/rl/net/pw_attn.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "2809ced46990456902918eaf281db5d27aa7b682782079159679e5e5154856c4",
+      "migrated_sha256": "2809ced46990456902918eaf281db5d27aa7b682782079159679e5e5154856c4",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/rnn_loop.py",
+      "source": "dywa/src/models/rl/net/rnn_loop.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "65a2cd731883671716c34627ba8e85ddcbacebe60dcbd6797e908c140621e7ee",
+      "migrated_sha256": "65a2cd731883671716c34627ba8e85ddcbacebe60dcbd6797e908c140621e7ee",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/net/sd_cross.py",
+      "source": "dywa/src/models/rl/net/sd_cross.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "64031f9c42e7db47cebc79c79e7987d0599afe35b4659f2b891dba58457f8c74",
+      "migrated_sha256": "64031f9c42e7db47cebc79c79e7987d0599afe35b4659f2b891dba58457f8c74",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/nets.py",
+      "source": "dywa/src/models/rl/nets.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "38680fe3e445708c12cc6753791db5d59d03d31c17c21804bd7e40836ffaa0dd",
+      "migrated_sha256": "38680fe3e445708c12cc6753791db5d59d03d31c17c21804bd7e40836ffaa0dd",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/padded_buffer.py",
+      "source": "dywa/src/models/rl/padded_buffer.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "2eff9719f77bb93fbcb359fb911120f1a4c6438ce61d4013736fddf26fd0ee8d",
+      "migrated_sha256": "2eff9719f77bb93fbcb359fb911120f1a4c6438ce61d4013736fddf26fd0ee8d",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/policy_util.py",
+      "source": "dywa/src/models/rl/policy_util.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e6a6dae6e237ca210160c2cf7b57579f6378efe4a8f83bbc4aac5eed95587bd4",
+      "migrated_sha256": "e6a6dae6e237ca210160c2cf7b57579f6378efe4a8f83bbc4aac5eed95587bd4",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/ppo_config.py",
+      "source": "dywa/src/models/rl/ppo_config.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "0f42e1140a9465781ef0f673f0f9263eff57e2cd454d0bc27715becf3c26559b",
+      "migrated_sha256": "0f42e1140a9465781ef0f673f0f9263eff57e2cd454d0bc27715becf3c26559b",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/ppo_util.py",
+      "source": "dywa/src/models/rl/ppo_util.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "3274471829ecfa92aa31d51c6c5f26efd4902acd2568fcc82418569f45d4b171",
+      "migrated_sha256": "3274471829ecfa92aa31d51c6c5f26efd4902acd2568fcc82418569f45d4b171",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/running_mean_std.py",
+      "source": "dywa/src/models/rl/running_mean_std.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "8be89c1a57175b1e2516dbac8a8c4a83240797ac3511b50a0798d2286c8a8c09",
+      "migrated_sha256": "8be89c1a57175b1e2516dbac8a8c4a83240797ac3511b50a0798d2286c8a8c09",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/util.py",
+      "source": "dywa/src/models/rl/util.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "150e151d858a74a3502e73e68f305065f2918f7a89f2511f0e6d4c4d194f38f0",
+      "migrated_sha256": "150e151d858a74a3502e73e68f305065f2918f7a89f2511f0e6d4c4d194f38f0",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/rl/v6/__init__.py",
+      "source": "dywa/src/models/rl/v6/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/models/rl/v6/ppo.py",
+      "source": "dywa/src/models/rl/v6/ppo.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "131d53c61e6aa895734814ea55b5803b05428bdd0f3366b97eb348a42b08eacf",
+      "migrated_sha256": "131d53c61e6aa895734814ea55b5803b05428bdd0f3366b97eb348a42b08eacf",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/models/sdf/encoder/__init__.py",
+      "source": "dywa/src/models/sdf/encoder/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/models/sdf/encoder/point_tokens.py",
+      "source": "dywa/src/models/sdf/encoder/point_tokens.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "af4584ab01fa3b8ca515e55155e432e7fd561cc201241125c4fff8908b652fc4",
+      "migrated_sha256": "af4584ab01fa3b8ca515e55155e432e7fd561cc201241125c4fff8908b652fc4",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/nvtx.py",
+      "source": "dywa/src/nvtx.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "801c8bdfa0b4be0078b0dc10ae97944ba1e0096f4b1c8ae8e223453b487719fe",
+      "migrated_sha256": "801c8bdfa0b4be0078b0dc10ae97944ba1e0096f4b1c8ae8e223453b487719fe",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/train/__init__.py",
+      "source": "dywa/src/train/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/train/ckpt.py",
+      "source": "dywa/src/train/ckpt.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "6405d837cac647529cca2aaa7be23408b9fb25ed493a88c28e5ba02c2fe52d93",
+      "migrated_sha256": "6619e0385fed654ba4ed05e188c5fc7bbedbcf8691e393181cef59f81a084f39",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/train/hf_hub.py",
+      "source": "dywa/src/train/hf_hub.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e585e295dfad934cdcaef90bf176ae10b79efab077b2ac30dda80506e38569df",
+      "migrated_sha256": "e585e295dfad934cdcaef90bf176ae10b79efab077b2ac30dda80506e38569df",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/train/losses.py",
+      "source": "dywa/src/train/losses.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "0908af23d8421b836387755ac348342cdc73374ae1d2d3d6f7c7a9986635ded0",
+      "migrated_sha256": "0908af23d8421b836387755ac348342cdc73374ae1d2d3d6f7c7a9986635ded0",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/train/metrics.py",
+      "source": "dywa/src/train/metrics.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "6e43c3599b0cf81b6d9b1c0029ce79ffffb4ba8f73100ca00cfc5b15193820b0",
+      "migrated_sha256": "c5a5337024e8f59c743ae7af2aad2f9885168d04e912730340b9a2bcb6e35c98",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/train/training_state.py",
+      "source": "dywa/src/train/training_state.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "ae2e2870762b9332e44238e6a7e3690e566214caed428d5d6145c8ae043a8f49",
+      "migrated_sha256": "ae2e2870762b9332e44238e6a7e3690e566214caed428d5d6145c8ae043a8f49",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/train/util.py",
+      "source": "dywa/src/train/util.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e09576fa9c8ab7c3abea6fd97eaf8a7a9ab93c434a6d6f558883e2f55e5e7e74",
+      "migrated_sha256": "e09576fa9c8ab7c3abea6fd97eaf8a7a9ab93c434a6d6f558883e2f55e5e7e74",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/train/wandb.py",
+      "source": "dywa/src/train/wandb.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "cee3e8ee742c47951a3f7aee456938016ab910945a69b44275a5e7761cf74bf0",
+      "migrated_sha256": "cee3e8ee742c47951a3f7aee456938016ab910945a69b44275a5e7761cf74bf0",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/util/__init__.py",
+      "source": "dywa/src/util/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "migrated_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/util/config.py",
+      "source": "dywa/src/util/config.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "1a135babca70a0e308ae31febafe5d681b3301ce640d0dbaad48f38c90c703bb",
+      "migrated_sha256": "1a135babca70a0e308ae31febafe5d681b3301ce640d0dbaad48f38c90c703bb",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/util/contra_loss.py",
+      "source": "dywa/src/util/contra_loss.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "d3e3759002513dbb2a3d31664c0eabe73b41044602d9c201a652b2c6787da728",
+      "migrated_sha256": "f7ccd30d2459000a5c579616c9e7f3cd8a51b65f5ce6bb32960b8e40cf6796e1",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/util/hydra_cli.py",
+      "source": "dywa/src/util/hydra_cli.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "5558bb15a9b31a611b24823a1300866565e0c336c475788c62fe00e3aa8dc499",
+      "migrated_sha256": "5558bb15a9b31a611b24823a1300866565e0c336c475788c62fe00e3aa8dc499",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/util/math_util.py",
+      "source": "dywa/src/util/math_util.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "625a0b1fff10c5de626841fdfd622d1a8d448bc4b2b6b3d4fff36d1679e521f8",
+      "migrated_sha256": "8bb15c951332c102ac7e2590a765a09835c926c9ab2d0d3d8ec375c2055dfc90",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/util/path.py",
+      "source": "dywa/src/util/path.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "a53bc73b2e9d89c087f9275eb621d12983498bcc5400601222bc8640c2c4cd2a",
+      "migrated_sha256": "a53bc73b2e9d89c087f9275eb621d12983498bcc5400601222bc8640c2c4cd2a",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/util/rot_loss.py",
+      "source": "dywa/src/util/rot_loss.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "44308329012c49b963bfeefb0c5a6a0d5b7f408d0bef3d7edb0ef2be0874c15d",
+      "migrated_sha256": "5f84378dff26b8b2b925ae94857f5cd07f0a9a30021da23eb1bd73d606de327b",
+      "modified_during_migration": true
+    },
+    {
+      "path": "dywa/src/util/torch_util.py",
+      "source": "dywa/src/util/torch_util.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "50c2d25d3f9207ee3cecb15e269ac848ae63a70e056245781816538a5e493631",
+      "migrated_sha256": "50c2d25d3f9207ee3cecb15e269ac848ae63a70e056245781816538a5e493631",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/util/vis/__init__.py",
+      "source": "dywa/src/util/vis/__init__.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "67a63b9b5964cc70f4459ebff3f6846f64785c541eb5fe48ad0ae32ed6f31cd0",
+      "migrated_sha256": "67a63b9b5964cc70f4459ebff3f6846f64785c541eb5fe48ad0ae32ed6f31cd0",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/util/vis/attn.py",
+      "source": "dywa/src/util/vis/attn.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "393f49e48eae19ee11dee4b193f1f021ab26a0b385d1b0ce6387bc2d9d6ae5bb",
+      "migrated_sha256": "393f49e48eae19ee11dee4b193f1f021ab26a0b385d1b0ce6387bc2d9d6ae5bb",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/util/vis/flow.py",
+      "source": "dywa/src/util/vis/flow.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "aa1a0e6dded766e389e00e502be26b6c8016b24b628a828c25435144f3978362",
+      "migrated_sha256": "aa1a0e6dded766e389e00e502be26b6c8016b24b628a828c25435144f3978362",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/util/vis/img.py",
+      "source": "dywa/src/util/vis/img.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "352e40df574f651b30164aa209b3d900822cdfea73f95a50b251aa753d0cca8c",
+      "migrated_sha256": "352e40df574f651b30164aa209b3d900822cdfea73f95a50b251aa753d0cca8c",
+      "modified_during_migration": false
+    },
+    {
+      "path": "dywa/src/util/vis/win_o3d.py",
+      "source": "dywa/src/util/vis/win_o3d.py",
+      "source_set": "contact_future_20260809",
+      "reason": "dependency",
+      "source_sha256": "8d32a1ee6ae45f07cecb7f957167b1797efcce59c0166adda2fe6fd2c465b35a",
+      "migrated_sha256": "59754398d963f4a349b4c87f0eb21c067e397e918d3ece2d6c4b727af468cf00",
+      "modified_during_migration": true
+    },
+    {
+      "path": "environment-simulation.txt",
+      "source": "environment-simulation.txt",
+      "source_set": "contact_future_20260809",
+      "reason": "runtime packaging/license",
+      "source_sha256": "f55e16f146212e01c5e56eaa6b362a9b11ab8a12679fa6978b183954bf59524d",
+      "migrated_sha256": "1c7902121229177fe599342ab8713343f664738e04ecfda86d3d74e1c59121e7",
+      "modified_during_migration": true
+    }
+  ]
+}

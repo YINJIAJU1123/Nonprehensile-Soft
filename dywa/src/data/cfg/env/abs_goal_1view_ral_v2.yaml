@@ -1,0 +1,39 @@
+# @package _global_
+defaults:
+  - abs_goal_1view
+
+# RAL-v2 primary sensor regime: instantiate only the primary NVDR camera.
+multiple_cameras: false
+camera_eyes: []
+
+camera:
+  eye: [0.458, -0.400, 0.740]
+  at: [0.0, 0.0, 0.55]
+  up: [0.0, 0.0, 1.0]
+  # Fixed extrinsics/FOV: do not consume privileged object pose or radius.
+  track_object: false
+  use_cloud: true
+  cloud_type: object
+  object_id: 2
+  img_size: [32, 32]
+  fov: 0.6
+  z_near: 0.01
+  aspect: 1.0
+  resample_cloud: true
+  cloud_size: 512
+  cloud_sample_method: deterministic
+  hide_arm: true
+  use_robot: false
+  use_ground: false
+  use_table: false
+  mimic_table_removal: false
+
+# The primary camera already emits exactly 512 points; no fusion wrapper runs.
+use_partial_cloud: true
+combine_cloud:
+  src_keys: [partial_cloud]
+  dst_key: partial_cloud
+  cloud_size: 512
+  combine_method: deterministic_fps
+
+env_name: abs_goal_1view_ral_v2
